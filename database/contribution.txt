@@ -1,0 +1,24 @@
+--Data--
+Laptop
+2024-07-10
+Internal
+Reboisasi
+Coba 1
+--Data--
+Laptop
+2024-07-10
+External
+Tanam Mangroove
+Coba 2
+--Data--
+Laptop
+2024-06-10
+Internal
+Ekstra
+Coba 3
+--Data--
+Bakti Sosial
+2024-07-18
+External
+Tanam Mangroove
+SUKSESS
