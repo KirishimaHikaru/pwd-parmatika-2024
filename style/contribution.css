@@ -1,0 +1,147 @@
+/* CONTRIBUTION */
+#contribution{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.containerContribution{
+	font-family: "Alegreya", serif;
+	width: 600px;
+	background-color: #013927;
+	box-shadow: 10px 10px 10px 5px  hsl(161, 97%, 11%, 50%) ;
+	border-radius: 10px;
+	padding: 30px 70px;
+   margin: 50px 0;
+	display: flex;
+	flex-direction: column;
+}
+.containerContribution h4{
+    font-weight: bold;
+	align-self: center;
+	font-size: 2rem;
+	margin-bottom: 30px;
+}
+form{
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+}
+.A,.B,.D,.E{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+.C{
+	margin-bottom: 10px;
+}
+label{
+	margin-bottom: 5px;
+}
+input, select{
+	background-color: hsl(150, 100%, 98%, 50%);
+	color: #013927;
+	border: 0;
+	border-radius: 5px;
+	height: 1.8rem;
+}
+select option{
+	background-color: hsl(150, 100%, 98%, 50%);
+}
+textarea{
+	background-color: hsl(150, 100%, 98%, 50%);
+	color: #013927;
+	border: 0;
+	border-radius: 5px;
+}
+input[type='radio']{
+	height: unset;
+}
+input[type='submit']{
+	margin-top: 10px;
+	border: #F5FFFA 1px solid;
+	background-color: #CAE6D5;
+	color: #013927;
+	font-weight: bold;
+}
+input[type='submit']:hover{
+	background-color: hsl(150, 100%, 98%, 50%);
+}
+
+/* PLACEHOLDER */
+::placeholder {
+  color: hsla(144, 37%, 85%, 0.5);
+  opacity: 1; /* Firefox */
+}
+::-ms-input-placeholder { /* Edge 12 -18 */
+  color: hsla(144, 37%, 85%, 0.5);
+}
+
+@media screen and (max-width: 431px) and (orientation: portrait) {
+   #contribution {
+       padding: 10px;
+   }
+
+   .containerContribution {
+       width: 90%; /* Adjust the width to fit the smaller screen */
+       padding: 20px; /* Adjust the padding for smaller screens */
+       margin: 20px 0; /* Adjust the margin for better spacing */
+       box-shadow: 5px 5px 5px 2px hsl(161, 97%, 11%, 50%); /* Reduce the shadow intensity */
+   }
+
+   .containerContribution h4 {
+       font-size: 1.5rem; /* Adjust the font size */
+       margin-bottom: 20px; /* Adjust the margin bottom */
+   }
+
+   form {
+       font-weight: bold;
+       display: flex;
+       flex-direction: column;
+   }
+   .A, .B, .D, .E, .C {
+       margin-bottom: 10px; /* Maintain consistent margin bottom */
+       flex-direction: column;
+   }
+
+    label {
+        margin-bottom: 5px;
+    }
+
+    input, select {
+        background-color: hsl(150, 100%, 98%, 50%);
+        color: #013927;
+        border: 0;
+        border-radius: 5px;
+        height: 1.8rem;
+        font-size: 1rem; /* Adjust the font size */
+    }
+
+    select option {
+        background-color: hsl(150, 100%, 98%, 50%);
+    }
+
+    textarea {
+        background-color: hsl(150, 100%, 98%, 50%);
+        color: #013927;
+        border: 0;
+        border-radius: 5px;
+        font-size: 1rem; /* Adjust the font size */
+    }
+
+    input[type='radio'] {
+        height: unset;
+    }
+
+    input[type='submit'] {
+        margin-top: 10px;
+        border: #F5FFFA 1px solid;
+        background-color: #CAE6D5;
+        color: #013927;
+        font-weight: bold;
+        font-size: 1rem; /* Adjust the font size */
+    }
+
+    input[type='submit']:hover {
+        background-color: hsl(150, 100%, 98%, 50%);
+    }
+} 

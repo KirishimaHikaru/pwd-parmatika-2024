@@ -1,0 +1,76 @@
+.containerDashboard{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin: 30px 0 30px 0;
+}
+.quotes,.infografis{
+	background-color: #013927;
+	box-shadow: 10px 10px 10px 5px  hsl(161, 97%, 11%, 50%) ;
+	border-radius: 10px;
+	/* width: 350px; */
+	padding: 30px;
+	margin: 20px 20px;
+}
+.quotes h4{
+	font-family: 'Alegreya', sans;
+	font-size: 2rem;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.quotes p,.about p ,.infografis p{
+	font-size: 1.5rem;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+.infografis{
+	margin: 30px 0;
+	display: flex;
+	width: fit-content;
+	align-self: center;
+}
+.infografis p{
+	text-align: center;
+}
+.infografis img{
+	height: 160px;
+	margin-bottom: 20px;
+}
+
+@media screen and (max-width: 431px) and (orientation: portrait) {
+    .containerDashboard {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
+    }
+    
+    .quotes, .infografis {
+        width: 90%; /* Adjust width to be responsive */
+        padding: 20px; /* Reduce padding for smaller screens */
+        margin: 10px 0; /* Reduce margin for better spacing */
+        box-shadow: 5px 5px 5px 2px hsl(161, 97%, 11%, 50%); /* Adjust shadow to be less intense */
+    }
+    
+    .quotes h4, .about h4 {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+    
+    .quotes p, .about p, .infografis p {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+        letter-spacing: 0.5px; /* Adjust letter spacing */
+    }
+    
+    .infografis {
+        flex-direction: column; /* Stack infographics vertically */
+        align-items: center;
+        margin: 10px 0;
+        width: 90%; /* Ensure full width */
+    }
+    .infografis span{
+		margin: 10px 0;
+	 }
+    .infografis img {
+        height: 120px; /* Adjust image height */
+        margin-bottom: 10px; /* Adjust margin */
+    }
+}

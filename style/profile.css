@@ -1,0 +1,64 @@
+/* PROFILE */
+ut-ama{
+	flex-direction: row;
+	justify-content: center;
+}
+.containerAbout{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin: 30px 0 30px 0;
+}
+.about{
+	background-color: #013927;
+	box-shadow: 10px 10px 10px 5px  hsl(161, 97%, 11%, 50%) ;
+	border-radius: 10px;
+	width: 350px;
+	padding: 30px;
+	margin: 20px 20px;
+}
+.about h4{
+	font-family: 'Alegreya', sans;
+	font-size: 2rem;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.about p{
+	font-size: 1.5rem;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+.containerAbout button{
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+	width: 100%;
+	background-color: #004B33;
+	border-radius: 5px;
+	border: 0;
+	padding: 10px;
+	color: #CAE6D5;
+}
+.containerAbout button:hover{
+	transform: scale(1.05);
+}
+
+@media screen and (max-width: 431px) and (orientation: portrait) {
+    .containerAbout {
+        align-items: center; /* Center items horizontally */
+        margin: 10px 0; /* Adjust margin for better spacing */
+    }
+
+    .about {
+        margin: 20px; /* Adjust margin for better spacing */
+    }
+
+    .containerAbout button {
+        margin-top: 10px; /* Add some margin on top */
+    }
+
+    .containerAbout button:hover {
+        transform: scale(1.05);
+    }
+}

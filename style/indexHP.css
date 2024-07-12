@@ -1,0 +1,256 @@
+@media screen and (max-width: 431px) and (orientation: portrait) {
+	body {
+		font-size: 0.8rem;
+	}
+
+	header span {
+		flex-direction: column;
+		padding: 10px 15px;
+	}
+
+	the-logo {
+		flex-direction: column;
+		align-items: center;
+      margin-bottom: 20px;
+	}
+	
+	header the-logo {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-evenly;
+		margin-bottom: 20px;
+	}
+	the-logo div h3 {
+		font-size: 1.5rem;
+      text-align: center;
+	}
+
+	the-logo div p {
+		font-size: 0.7rem;
+		text-align: center;
+	}
+
+	the-logo img {
+		height: 60px;
+		width: 60px;
+		margin: 0 0 10px 0;
+	}
+
+	nav {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	nav a {
+		margin: 5px 0;
+		padding: 5px 0;
+		font-size: 0.8rem;
+	}
+
+   main{
+      height: 100vh;
+   }
+	#home{
+		min-height:0 ;
+	}
+	main h1 {
+		font-size: 3rem;
+		margin: 20px;
+		padding: 0 20px;
+	}
+
+	main a {
+		font-size: 0.8rem;
+		padding: 8px 10px;
+	}
+
+	ab-out {
+		flex-direction: column;
+		align-items: center;
+	}
+	ab-out div{
+		display: flex;
+		justify-content: center;
+	}
+	ab-out img {
+		height: auto;
+		width: 90%;
+		margin: 10px;
+	}
+
+	ab-out .about {
+		padding: 20px;
+	}
+
+	ab-out h2 {
+		font-size: 2.5rem;
+		margin: 20px;
+	}
+
+	ab-out p, ab-out h5 {
+		margin: 20px;
+		font-size: 0.8rem;
+	}
+
+	vision-mision {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	vision-mision div{
+		align-items: center;
+	}
+	vision-mision .mision, vision-mision .vision {
+		width: 90%;
+		margin: 20px 0;
+	}
+
+	vision-mision h3 {
+		font-size: 2.5rem;
+		margin-bottom: 20px;
+	}
+	vision-mision .visiA, vision-mision .visiB, vision-mision .mision li {
+		font-size: 0.8rem;
+	}
+
+	vision-mision img {
+		width: 90%;
+		height: auto;
+	}
+
+	pe-aks {
+		align-items: center;
+	}
+
+	pe-aks .peaks {
+		flex-direction: column;
+	}
+
+	pe-aks span img {
+		width: 200px;
+		height: 200px;
+	}
+
+	pe-aks h2 {
+		font-size: 2.5rem;
+	}
+
+	pe-aks h4 {
+		font-size: 1.5rem;
+	}
+
+	com-mit {
+		grid-template-columns: 1fr;
+	}
+
+	com-mit div {
+		height: auto;
+		padding: 20px;
+	}
+
+	com-mit h2 {
+		font-size: 2.5rem;
+	}
+
+	com-mit h4 {
+		font-size: 1.5rem;
+	}
+
+	press-release .container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	press-release .container div {
+		width: 90%;
+		height: auto;
+		margin: 10px 0;
+	}
+
+	press-release h2 {
+		font-size: 2.5rem;
+	}
+
+	press-release h5 {
+		font-size: 1rem;
+	}
+
+	press-release p {
+		font-size: 0.8rem;
+	}
+
+	footer .A img {
+		margin-bottom: 30px;
+		display: none;
+	}
+	footer .B, footer .C{
+		text-align: center;
+	}
+
+	footer ka-ki {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	footer ka-ki h4 {
+		font-size: 1.5rem;
+	}
+
+	footer ka-ki p {
+		font-size: 0.8rem;
+		text-align: center;
+	}
+
+	footer .D {
+		padding: 20px;
+		align-self:center;
+	}
+
+	footer .D h4 {
+		font-size: 1rem;
+		margin: 10px 0;
+		text-align: center;
+	}
+
+	footer .D img {
+		width: 30px;
+		height: 30px;
+	}
+
+	.tumbal{
+	   min-height: 160px;
+   }
+}
+/* Menu Laci Header */
+@media screen and (max-width: 431px) and (orientation: portrait) {
+   .menu-toggle {
+      display: block;
+      background: none;
+      border: none;
+      color: #ffffff;
+      font-size: 2rem;
+      cursor: pointer;
+   }
+
+   .nav-container {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease-out;
+      width: 100%;
+   }
+
+   .nav-container.show {
+      max-height: 500px; /* Set a max height larger than the nav's total height */
+   }
+
+   nav {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   nav a {
+      margin: 5px 0;
+      padding: 5px 0;
+      font-size: 0.8rem;
+   }
+}

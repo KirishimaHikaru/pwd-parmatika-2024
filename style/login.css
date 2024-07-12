@@ -1,0 +1,147 @@
+body{
+	height: 100vh;
+	font-family: "Alegreya", serif;
+	background-color: #4A6B45;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+main{
+	background-color: #013927;
+	width: 50%;
+	padding: 35px 50px;
+	border-radius: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+main .logo img{
+	width: 90px;
+	height: 90px;
+	background-color: rgba(245, 255, 250, 0.5);
+	border-radius: 50%;
+	margin: 0 30px 30px 30px;
+}
+form{
+	display: flex;
+	flex-direction: column;
+}
+label{
+	color: #CAE6D5;
+	text-align: left;
+}
+.A,.B,.C,.D{
+	margin-bottom: 15px;
+	width:fit-content ;
+}
+input{
+	width: 17rem;
+	padding:0 20px;
+	height: 2.5rem;
+	background-color: hsla(144, 37%, 85%, 0.5);
+	border: 0;
+	border-radius: 5px;
+	color: #ffffff;
+}
+input[type='checkbox']{
+	width: unset;
+	height: unset;
+	margin: 0;
+	display: block;
+	margin: 0 5px 0 0;
+}
+input[type='submit']{
+	font-family: 'Source Pro', sans-serif;
+	font-weight: bold;
+	margin: 0;
+	width: 12rem;
+	height: 1.8rem;
+	border-radius: 50px;
+	background-color: #099140;
+	color: #ffffff;
+	margin: 0 10px;
+	align-self: center;
+}
+.C{
+	display: flex;
+}
+.D{
+	display: grid;
+	grid-template-columns: auto auto;
+}
+.D input{
+	width: unset;
+	height: 1.8rem;
+}
+.D img{
+	width: 100px;
+	height: 50px;
+	margin-right: 20px;
+}
+.E{
+	margin-top: 15px;
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+}
+.E > a{
+	text-align: center;
+}
+a{
+	color: hsla(144, 37%, 85%, 0.5);
+}
+::placeholder {
+  color: hsla(144, 37%, 85%, 0.5);
+  opacity: 1; /* Firefox */
+}
+::-ms-input-placeholder { /* Edge 12 -18 */
+  color: hsla(144, 37%, 85%, 0.5);
+}
+.back{
+	padding-top: 30px;
+}
+.back > a{
+	color: black;
+}
+.back img{
+	height: 1rem;
+}
+.error{
+	border: 2px solid red;
+}
+
+@media (max-width: 431px) and (orientation: portrait) {
+	body {
+		padding: 10px;
+		height: 97vh;
+	}
+	main {
+		width: 90%;
+		padding: 20px;
+		border-radius: 30px;
+	}
+	main .logo img {
+		width: 70px;
+		height: 70px;
+		margin: 0 10px 20px 10px;
+	}
+	input {
+		width: 100%;
+		padding: 0 10px;
+		height: 2.2rem;
+	}
+	input[type='submit'] {
+		width: 10rem;
+		height: 2rem;
+	}
+	.D {
+		grid-template-columns: 1fr;
+		text-align: center;
+	}
+	.D img {
+		width: 80px;
+		height: 40px;
+		margin: 0 auto 10px auto;
+	}
+}

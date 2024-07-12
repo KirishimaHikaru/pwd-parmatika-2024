@@ -1,0 +1,36 @@
+.containerAbout{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin: 30px 0 30px 0;
+}
+.about{
+	background-color: #013927;
+	box-shadow: 10px 10px 10px 5px  hsl(161, 97%, 11%, 50%) ;
+	border-radius: 10px;
+	/* width: 350px; */
+	padding: 30px;
+	margin: 20px 20px;
+}
+
+@media screen and (max-width: 431px) and (orientation: portrait) {
+   .containerAbout {
+      align-items: center; /* Center items horizontally */
+      margin: 10px 0; /* Adjust margin for better spacing */
+   }
+   .about {
+      margin: 20px; /* Adjust margin for better spacing */
+   }
+}
+.about h4{
+	font-size: 1.5rem;
+}
+.about table{
+	width: 100%;
+} 
+tr{
+	font-weight: bold;
+	font-size: 1.2rem; /* Adjust font size for smaller screens */
+   letter-spacing: 1px; /* Adjust letter spacing */
+}

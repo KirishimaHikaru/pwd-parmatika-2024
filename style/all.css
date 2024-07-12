@@ -1,0 +1,136 @@
+body {
+   font-family: Arial, sans-serif;
+   background-color: #4A6B45;
+   color: #CAE6D5;
+   display: flex;
+}
+aside {
+   width: 250px;
+	background-color: #013927;
+   color: #ecf0f1;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px;
+   position: fixed;
+	height: 100vh;
+   transition: transform 0.3s ease;
+   transform: translateX(0);
+}
+
+aside.closed {
+   transform: translateX(-100%);
+}
+
+aside img {
+	background-color: hsl(150, 100%, 98%,20%);
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   margin-bottom: 20px;
+}
+
+aside a {
+	font-size: 1.3rem;
+   color: #CAE6D5;
+   text-decoration: none;
+	border: #CAE6D5 1px solid;
+   width: 100%;
+   text-align: center;
+   padding: 10px 0;
+   transition: background 0.3s;
+}
+
+aside a:hover {
+	background-color: #004B33;
+}
+
+aside div {
+   margin-top: auto;
+   text-align: center;
+}
+
+main {
+   flex-grow: 1;
+   margin-left: 250px;
+   transition: margin-left 0.3s;
+}
+
+main.expanded {
+   margin-left: 0;
+}
+
+header {
+   padding: 20px;
+   color: #CAE6D5;
+   background-color: #013927;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 20px;
+}
+header h3{
+	/* margin: 20px 20px; */
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.toggle-btn {
+   font-size: 24px;
+   background: none;
+   border: none;
+   color: #CAE6D5;
+   cursor: pointer;
+}
+
+.toggle-btn:focus {
+   outline: none;
+}
+
+ut-ama{
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+}
+
+@media screen and (max-width: 431px) and (orientation: portrait) {
+    aside {
+        width: 100%;
+        /* height: 100vh; */
+		  height: 100%;
+        transform: translateX(-100%);
+        position: fixed; /* Ensure aside is fixed to cover the entire screen */
+        z-index: 1000; /* Ensure it's above the main content */
+    }
+    
+    aside.closed {
+        transform: translateX(-100%);
+    }
+    
+    aside.open {
+        transform: translateX(0);
+    }
+    
+    main {
+        margin-left: 0;
+    }
+    
+    main.expanded {
+        margin-left: 0;
+    }
+	 ut-ama{
+		margin-top: 0px;
+	}
+	 header h3{
+		font-size: 1rem;
+	}
+    .toggle-btn {
+        font-size: 24px;
+        background: none;
+        border: none;
+        color: #CAE6D5;
+        cursor: pointer;
+        top: 20px;
+        left: 20px;
+        z-index: 2000; /* Ensure the toggle button is above the aside */
+    }
+}
