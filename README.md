@@ -13,8 +13,10 @@ Community Website Prototype - Sebuah Karya Berupa Rancangan/Prototipe Website Ko
 - PHP dasar
 
 ## Cara mengakses:
-- Akses secara langsung melalui link: [AULITA]([url](https://anaphalis.000webhostapp.com/))
+- Akses secara langsung melalui link: [AULITA](https://anaphalis.000webhostapp.com/)
 - Akses secara terbatas dan lokal:
+'''
     a. Siapkan localhost (disarankan gunakan XAMPP)
     b. Dowload seluruh isi repositori ini dan letakkan dalam folder root lokal
     c. Jalankan melalui localhost pada browser
+'''
